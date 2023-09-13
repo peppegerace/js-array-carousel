@@ -25,6 +25,7 @@
 
 .slider {
   height: 100%;
+  position: relative;
 }
 
 .items-wrapper {
@@ -35,4 +36,31 @@
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
+
+.btn-arrow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-arrow:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.btn-arrow.up {
+  top: 15px;
+}
+
+.btn-arrow.down {
+  bottom: 15px;
 }
